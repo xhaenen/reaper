@@ -1,0 +1,15 @@
+desc:Simple Volume Control
+//
+// A basic volume control JSFX example
+//
+// (c) 2023, Your Name
+//
+
+slider1:0<-60,12,0.1>Gain (dB)
+
+@slider
+  gain = 10^(slider1/20);
+
+@sample
+  spl0 *= gain;
+  spl1 *= gain; 
